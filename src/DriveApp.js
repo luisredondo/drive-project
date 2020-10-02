@@ -1,16 +1,15 @@
+
+// Importación de React
 import React from 'react';
 
-import { FilesTable } from './components/Table/FilesTable';
-import { UploadButton } from './components/UploadButton/UploadButton';
+// Importación de la interfaz de gráfica del App de Drive
+import UiDrive from './UiDrive';
 
+// Componente DriveApp, representa a la aplicación y es el primero que renderiza
+// Es decir, el punto de entrada. 
 export const DriveApp = () => {
-
+  // El componente DriveApp retorna el component UiDrive
   return (
-    <div>
-      <UploadButton />
-      <br/>
-      <br/>
-      <FilesTable />
-    </div>
+    <UiDrive/> // Componente para renderizar la UI del app
   )
 }
